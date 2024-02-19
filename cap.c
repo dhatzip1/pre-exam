@@ -2,6 +2,14 @@
 int main()
 {
     int ch=getchar();
-    ch=ch-('A'-'a');
-    printf("%c\n",ch);
+    if(ch>='a')
+    {
+        ch=ch-('a'-'A');
+        printf("%c\n",ch);
+    }
+    else
+    {
+        ch=ch+('a'-'A');
+        printf("%c\n",ch);
+    } 
 }
