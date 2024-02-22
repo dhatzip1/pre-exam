@@ -82,10 +82,14 @@ int main(int argc, char **argv)
     printf("\n");
     
     char *newp=malloc(l*sizeof(char));
-    strcpy(newp, p);
-    printf("Copied string is: %s\n", pt);
+    strcpy(p,newp);
+    for(i=0;i<l;i++)
+    {
+        printf("%c ",newp[i]);
+    }
+    //puts(newp);
 
-
+    free(newp);
     free (pt);
     return 0;
 }
